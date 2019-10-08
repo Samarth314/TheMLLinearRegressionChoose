@@ -23,7 +23,6 @@ def runMachine(txt):
 
 
 
-    from sklearn.linear_model import LinearRegression
     regressor = LogisticRegression(C=1e5, solver='lbfgs', multi_class='multinomial')
     regressor.fit(X_Train, Y_Train)
 
