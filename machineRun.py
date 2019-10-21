@@ -20,7 +20,7 @@ def runMachine(txt):
     from sklearn.model_selection import train_test_split
     X_Train, X_Test, Y_Train, Y_Test = train_test_split(exo_X, exo_Y, test_size = 1/3, random_state = 0)
 
-
+ 
 
 
     regressor = LogisticRegression(C=1e5, solver='lbfgs', multi_class='multinomial')
